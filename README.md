@@ -1,52 +1,46 @@
-# ⚔️ LifeQuest — 16-Bit RPG Gamified Task Manager
+# ⚔️ LifeQuest — 16-Bit Retro RPG Task Manager
 
-> **Hackathon Track**: Productivity & Gamification / Web Apps  
-> **Live Demo**: [Click here to open LifeQuest](https://ais-dev-uvvao46ngei3ohczhcuzs3-456807731743.asia-east1.run.app)  
+> **Live Public URL**: [https://ais-pre-uvvao46ngei3ohczhcuzs3-456807731743.asia-east1.run.app](https://ais-pre-uvvao46ngei3ohczhcuzs3-456807731743.asia-east1.run.app)  
+> **Development Preview**: [https://ais-dev-uvvao46ngei3ohczhcuzs3-456807731743.asia-east1.run.app](https://ais-dev-uvvao46ngei3ohczhcuzs3-456807731743.asia-east1.run.app)
 
----
-
-## 💡 The Problem & The Solution
-- **The Problem**: Traditional todo apps feel like chores, causing users to abandon tasks and procrastinate.
-- **The Solution**: LifeQuest turns real-life tasks into RPG quests. You gain XP, level up your character, grow attributes (Intelligence, Strength, Discipline), and earn gold you can spend on real-life rewards (like taking a break or buying a coffee).
+LifeQuest transforms real-life tasks into an engaging retro 16-bit role-playing adventure. Real-world tasks become quests that award XP, level up your character attributes (Intellect, Strength, Discipline, Creativity, Health), and yield gold to redeem custom real-life bounties in the Adventurer's Tavern.
 
 ---
 
-## 🧪 Quick Test Guide for Judges (Try it in 60 Seconds!)
+## 🌐 Public Access & Evaluation Guide
 
-You can test the entire app instantly without registering:
+Anyone can access and test the app immediately without registration or API keys:
 
-### 1. Instant Login
-1. Open the **[Live Demo](https://ais-dev-uvvao46ngei3ohczhcuzs3-456807731743.asia-east1.run.app)**.
-2. Click **"⚔️ Demo Hero Quick Start"** (bypasses Google login and loads a pre-seeded hero profile).
-
-### 2. Test Quest Completion & Level Up
-1. In the **Quests** tab, click the **Checkmark (✔)** on any quest (e.g., *"Morning Meditation"* or *"Review Pull Requests"*).
-2. **Observe**:
-   - 8-bit sound chimes play in real-time.
-   - Floating combat text (`+30 XP`, `+15 Gold`) pops up.
-   - The XP bar fills up, and your character levels up with a celebratory screen!
-
-### 3. Test the Reward Shop (The Tavern)
-1. Switch to the **Tavern** tab.
-2. Click **"Redeem for Gold"** on any reward (e.g., *"Coffee Break"* or *"1 Hr Video Games"*).
-3. **Observe**: Your gold pouch updates dynamically, and the claim is recorded in your history.
-
-### 4. Check the Badges & Activity Chronicles
-- Visit the **Hall of Fame** tab to see achievement badges automatically unlocked by completing tasks.
-- Check the **Chronicles** tab to see your persistent history log.
+1. Open the **[Public Application URL](https://ais-pre-uvvao46ngei3ohczhcuzs3-456807731743.asia-east1.run.app)**.
+2. Click **"⚔️ Demo Hero Quick Start"** to instantly enter with a pre-seeded hero profile (`Arthur the Brave`).
+3. **Try completing a quest**: Click the **Checkmark (✔)** on any quest to trigger real-time 8-bit sound effects, combat text (`+30 XP`, `+15 Gold`), and level progression.
+4. **Visit the Tavern**: Spend accumulated gold on real-world rewards (e.g., *Coffee Break*, *Gaming Session*).
+5. **Inspect Badges & Chronicles**: Check the **Hall of Fame** and **Chronicles** tabs to view unlocked achievement badges and persistent activity logs.
 
 ---
 
-## 🛠️ How It Works (Tech Stack)
+## 🌟 Features
 
-- **Frontend**: React + TypeScript + Tailwind CSS (retro 16-bit pixel theme with Web Audio API sound synthesis).
-- **Backend**: Node.js & Express API with full request validation.
-- **Database**: Cloud SQL (PostgreSQL) using Drizzle ORM for persistent data storage.
-- **Game Engine**: Server-authoritative XP scaling formula ($\text{XP} = \lfloor 80 \times \text{Level}^{1.55} \rfloor$) so levels cannot be manipulated on the client.
+- **Quest Board**: Organize and filter tasks by category (*Intellect*, *Strength*, *Discipline*, *Creativity*, *Health*) and difficulty (*Easy*, *Medium*, *Hard*, *Epic*).
+- **Server-Authoritative Progression**: Level progression and XP curves are validated and calculated securely on the server ($80 \times \text{Level}^{1.55}$) to prevent client tampering.
+- **Adventurer HUD**: Real-time animated retro gauges for Health (HP), Mana (MP), and Experience (XP), along with primary stats.
+- **The Tavern (Reward Shop)**: Spend hard-earned gold coins on real-world rewards.
+- **Expedition Chronicles & Hall of Fame**: 14 distinct achievement badges unlocked upon hitting quest, streak, and level milestones.
+- **Retro 8-Bit Audio Synthesis**: Real-time sound effects synthesized in the browser via Web Audio API without external audio assets.
+- **Dual Authentication**: Public instant Demo Hero access or Google Sign-In via Firebase Authentication.
 
 ---
 
-## 💻 Run It Locally (In 3 Steps)
+## 🏗️ Tech Stack
+
+- **Frontend**: React 19, TypeScript, Tailwind CSS, Motion, Lucide Icons
+- **Backend**: Node.js, Express, tsx, esbuild
+- **Database**: PostgreSQL (Cloud SQL) with Drizzle ORM
+- **Authentication**: Firebase Authentication & Firebase Admin SDK
+
+---
+
+## 🚀 Local Development
 
 ```bash
 # 1. Clone the repository
@@ -56,5 +50,11 @@ cd lifequest
 # 2. Install dependencies
 npm install
 
-# 3. Start the dev server
+# 3. Run in development mode
 npm run dev
+
+# 4. Build for production deployment
+npm run build
+
+# 5. Start production server
+npm run start

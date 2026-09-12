@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-pixel {
+    font-family: 'Press Start 2P', monospace;
+  }
+  .font-retro {
+    font-family: 'VT323', monospace;
+  }
+  .font-pixel-sans {
+    font-family: 'Pixelify Sans', sans-serif;
+  }
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+
+  /* 16-bit retro pixel borders */
+  .rpg-panel {
+    background-color: #1a1625;
+    border: 3px solid #3b3355;
+    box-shadow: 
+      inset -3px -3px 0px 0px #0e0a19,
+      inset 3px 3px 0px 0px #5c4d80,
+      0 4px 12px rgba(0, 0, 0, 0.6);
+  }
+
+  .rpg-panel-gold {
+    background-color: #1f1924;
+    border: 3px solid #a87d2b;
+    box-shadow: 
+      inset -3px -3px 0px 0px #4d360e,
+      inset 3px 3px 0px 0px #ffd166,
+      0 4px 16px rgba(0, 0, 0, 0.7);
+  }
+
+  .rpg-panel-dark {
+    background-color: #121018;
+    border: 2px solid #2b253b;
+    box-shadow: 
+      inset -2px -2px 0px 0px #08060d,
+      inset 2px 2px 0px 0px #3e3556;
+  }
+
+  .rpg-btn {
+    border: 2px solid #5a4b7c;
+    box-shadow: 
+      inset -2px -2px 0px 0px #181326,
+      inset 2px 2px 0px 0px #826cb5;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .rpg-btn:hover {
+    filter: brightness(1.15);
+  }
+
+  .rpg-btn:active {
+    box-shadow: 
+      inset 2px 2px 0px 0px #181326,
+      inset -2px -2px 0px 0px #826cb5;
+    transform: translateY(1px);
+  }
+
+  .rpg-btn-gold {
+    background: linear-gradient(180deg, #ffd166 0%, #c99320 100%);
+    color: #181307;
+    border: 2px solid #ffe89e;
+    box-shadow: 
+      inset -2px -2px 0px 0px #634305,
+      inset 2px 2px 0px 0px #fff2b2,
+      0 2px 4px rgba(0,0,0,0.5);
+  }
+
+  .rpg-btn-gold:active {
+    box-shadow: 
+      inset 2px 2px 0px 0px #634305,
+      inset -2px -2px 0px 0px #fff2b2;
+    transform: translateY(1px);
+  }
+
+  .rpg-btn-green {
+    background: linear-gradient(180deg, #2ec4b6 0%, #0f8b8d 100%);
+    color: #ffffff;
+    border: 2px solid #52e3d5;
+    box-shadow: 
+      inset -2px -2px 0px 0px #064041,
+      inset 2px 2px 0px 0px #8ef3e9;
+  }
+
+  /* Pixelated CRT Scanlines (optional immersion) */
+  .crt-overlay {
+    background: linear-gradient(
+      rgba(18, 16, 24, 0) 50%, 
+      rgba(0, 0, 0, 0.25) 50%
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+  }
+}
+
+/* Custom retro scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0d17;
+  border: 1px solid #282138;
+}
+::-webkit-scrollbar-thumb {
+  background: #463963;
+  border: 2px solid #1a1625;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8906;
+}
+

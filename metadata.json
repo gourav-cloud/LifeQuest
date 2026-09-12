@@ -1,0 +1,6 @@
+{
+  "name": "LifeQuest",
+  "description": "A retro 16-bit RPG-style Todo List that turns real-life tasks into game quests with XP, leveling, stats, and a gold reward shop.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
